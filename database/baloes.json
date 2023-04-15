@@ -1,14 +1,50 @@
 [
     {
-        "nome": "Pinho"
+        "id": 1,
+        "nome": "Pinho",
+        "piloto": {
+            "nome": "Renni Pinho",
+            "idade": 63,
+            "experiencia": "30 anos"
+        },
+        "caracteristicas": {
+            "cor": "Azul"
+        }
     },
     {
-        "nome": "Mickey"
+        "id": 2,
+        "nome": "Mickey",
+        "piloto": {
+            "nome": "Ramon Lummertz",
+            "idade": 25,
+            "experiencia": "5 anos"
+        },
+        "caracteristicas": {
+            "cor": "Preto"
+        }
     },
     {
-        "nome": "Ulbra"
+        "id": 3,
+        "nome": "Ulbra",
+        "piloto": {
+            "nome": "Tiago",
+            "idade": 28,
+            "experiencia": "6 anos"
+        },
+        "caracteristicas": {
+            "cor": "Amarelo"
+        }
     },
     {
-        "nome": "Dinossauro"
+        "id": 4,
+        "nome": "Dinossauro",
+        "piloto": {
+            "nome": "Djian",
+            "idade": 18,
+            "experiencia": "3 meses"
+        },
+        "caracteristicas": {
+            "cor": "Marrom"
+        }
     }
 ]
