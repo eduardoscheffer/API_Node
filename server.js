@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const port = 3010
+const port = 3000
 const baloes = require("./database/baloes.json")
 
 app.get("/baloes", (req, res)=> {
@@ -12,10 +12,13 @@ app.get("/baloes/:id", (req, res) => {
     
     const baloesEncontrados = baloes.filter((balao) => balao.id == id)
 
+    // console.log(baloesEncontrados);
+
     if (baloesEncontrados.length == 0)
         res.status(404).send()
     
     const balao = baloesEncontrados[0]
+    // console.log(balao);
     res.send(balao)
 })
 
