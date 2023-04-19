@@ -1,11 +1,6 @@
 const express = require("express")
 const app = express()
-<<<<<<< HEAD
-const port = 3000
-const hostname = '127.0.0.1';
-=======
 const port = 3010
->>>>>>> parent of 3969f20 (update server.js)
 const baloes = require("./database/baloes.json")
 
 app.get("/baloes", (req, res)=> {
