@@ -1,11 +1,13 @@
 const express = require("express")
 const app = express()
 const port = 3000
+const hostname = '127.0.0.1';
 const baloes = require("./database/baloes.json")
 
 app.get("/baloes", (req, res)=> {
     res.send(baloes)
 })
+
 
 app.get("/baloes/:id", (req, res) => {
     const id = req.params.id
@@ -22,4 +24,7 @@ app.get("/baloes/:id", (req, res) => {
     res.send(balao)
 })
 
-app.listen(port)
+// app.listen('Server is running');
+app.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+  });
