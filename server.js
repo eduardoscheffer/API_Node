@@ -20,7 +20,4 @@ app.get("/baloes/:id", (req, res) => {
     res.send(balao)
 })
 
-// app.listen('Server is running');
-app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-  });
+app.listen(port);
