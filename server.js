@@ -3,6 +3,9 @@ const app = express()
 <<<<<<< HEAD
 const port = 3000
 const hostname = '127.0.0.1';
+=======
+const port = 3010
+>>>>>>> parent of 3969f20 (update server.js)
 const baloes = require("./database/baloes.json")
 
 app.get("/baloes", (req, res)=> {
@@ -19,7 +22,6 @@ app.get("/baloes/:id", (req, res) => {
         res.status(404).send()
     
     const balao = baloesEncontrados[0]
-    // console.log(balao);
     res.send(balao)
 })
 
